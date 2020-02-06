@@ -16,8 +16,8 @@ function Nav() {
         <p className="clickStart">Begin by clicking an image!</p>
       </div>
       <div className="nav navbar-nav ml-auto">
-        <p className="">Current Score:</p>
-        <p className="">Top Score:</p>
+        <p className="scoreBoard">Current Score:</p>
+        <p className="scoreBoard">Top Score:</p>
       </div>
     </nav>
   );

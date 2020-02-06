@@ -1,0 +1,58 @@
+.characterName {
+  font-size: 25px;
+  font-family: "New Rocker", cursive;
+}
+
+.cardImg {
+  width: 260px;
+  height: 200px;
+  padding: 3px;
+  border: 5px solid #000000;
+  background-color: #ff0;
+  border-radius: 5%;
+  position: relative;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 200px;
+  max-width: 250px;
+  border: 1px solid #ffffff;
+  perspective: 1000px;
+  margin: 50px 0 50px 0;
+}
+
+.flip-card-inner {
+  border-radius: 5%;
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 20px #3f3e3e;
+}
+
+.flip-card:hover .flip-card-inner {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  padding: 3px;
+  border: 5px solid #000000;
+  border-radius: 5%;
+}

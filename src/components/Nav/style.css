@@ -1,10 +1,19 @@
 .navbar {
   background-color: #702a8c;
   color: #ffffff;
-  font-size: 40px;
 }
 
 .gargoyleLogo {
+  font-size: 40px;
+  position: relative;
+  right: 80px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.clickStart {
+  font-size: 30px;
   position: relative;
   right: 80px;
   width: 100%;
@@ -12,7 +21,8 @@
   height: auto;
 }
 
-.clickStart {
+.clickStart,
+.scoreBoard {
   font-family: "New Rocker", cursive;
   text-align: center;
 }
