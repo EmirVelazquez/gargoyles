@@ -1,0 +1,28 @@
+.bannerBackground {
+  background-color: #2d1138;
+}
+
+/* Background Image, this technique makes the image responsive. */
+.bannerBackground {
+  background-color: #2d1138;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 10px 20px -1px #616161;
+}
+
+.gargoylesContainer {
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gargoylesImg {
+  width: 400px;
+  height: auto;
+  max-width: 600px;
+}

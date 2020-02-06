@@ -1,14 +1,9 @@
-.navbar {
-  background-color: #702a8c;
-  color: #ffffff;
-}
-
 .gargoyleLogo {
-  font-size: 40px;
   position: relative;
-  right: 80px;
+  right: 60px;
+  top: 3px;
   width: 100%;
-  max-width: 280px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -25,4 +20,15 @@
 .scoreBoard {
   font-family: "New Rocker", cursive;
   text-align: center;
+}
+
+#navBar {
+  /* This will make the navBar `sticky` so when user scrolls it follows the scrolling */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #702a8c;
+  color: #ffffff;
+  height: 100px;
+  box-shadow: 0 10px 20px -1px #070309;
 }

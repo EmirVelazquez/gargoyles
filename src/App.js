@@ -3,11 +3,13 @@ import Nav from "./components/Nav";
 import GargoyleCard from "./components/GargoyleCard";
 import gargoyles from "./gargoyles.json";
 import CardContainer from "./components/CardContainer";
+import Banner from "./components/Banner";
 
 function App() {
   return (
     <div>
       <Nav />
+      <Banner />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-3"></div>

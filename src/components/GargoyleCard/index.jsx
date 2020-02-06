@@ -9,9 +9,7 @@ function GargoyleCard(props) {
           <img alt={props.name} src={props.image} className="cardImg" />
         </div>
         <div className="flip-card-back">
-          {/* <div className="card-img-overlay"> */}
           <h5 className="characterName">{props.name}</h5>
-          {/* </div> */}
           <figcaption className="figure-caption">{props.role}</figcaption>
         </div>
       </div>

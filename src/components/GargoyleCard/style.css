@@ -3,6 +3,12 @@
   font-family: "New Rocker", cursive;
 }
 
+.figure-caption {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
 .cardImg {
   width: 260px;
   height: 200px;
@@ -18,7 +24,6 @@
   width: 260px;
   height: 200px;
   max-width: 250px;
-  border: 1px solid #ffffff;
   perspective: 1000px;
   margin: 50px 0 50px 0;
 }
@@ -55,4 +60,21 @@
   padding: 3px;
   border: 5px solid #000000;
   border-radius: 5%;
+}
+
+/* Media Queries for Mobile */
+@media screen and (min-width: 100px) and (max-width: 767px) {
+  .cardImg,
+  .flip-card-inner,
+  .flip-card-front,
+  .flip-card-back {
+    width: 150px;
+    height: 130px;
+  }
+
+  .flip-card {
+    width: 150px;
+    height: 130px;
+    max-width: 170px;
+  }
 }

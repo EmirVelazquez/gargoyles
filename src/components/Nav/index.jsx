@@ -4,7 +4,7 @@ import gargoyleLogo from "./gargoylesSmall.png";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-light" id="navBar">
       <a className="navbar-brand" href="/">
         <img
           src={gargoyleLogo}
