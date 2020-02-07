@@ -2,7 +2,8 @@ import React from "react";
 import "./style.css";
 import gargoyleLogo from "./gargoylesSmall.png";
 
-function Nav() {
+// Stateless Functional Component
+const Nav = props => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light" id="navBar">
       <a className="navbar-brand" href="/">
@@ -15,12 +16,12 @@ function Nav() {
       <div className="nav navbar-nav ml-auto">
         <p className="clickStart">Begin by clicking an image!</p>
       </div>
-      <div className="nav navbar-nav ml-auto">
-        <p className="scoreBoard">Current Score:</p>
-        <p className="scoreBoard">Top Score:</p>
-      </div>
+      <ul className="nav navbar-nav ml-auto">
+        <li className="scoreBoard">Current Score: {props.totalScore}</li>
+        <li className="scoreBoard">Top Score: {props.highScore}</li>
+      </ul>
     </nav>
   );
-}
+};
 
 export default Nav;

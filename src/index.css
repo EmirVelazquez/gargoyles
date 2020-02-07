@@ -1,0 +1,9 @@
+#mainContainer {
+  background-image: url("./Bricks.png");
+}
+
+/* hsla color values are an extension of hsl color values with an alpha channel that specifies the opacity for a color. */
+#mainContent {
+  background-color: hsla(281.82, 54.1%, 11.96%, 0.7);
+  z-index: 1;
+}
