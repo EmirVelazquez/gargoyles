@@ -20,8 +20,22 @@ function shuffleArray(array) {
 class App extends Component {
   state = {
     gargoyles,
-    score: 5,
-    topScore: 7
+    notClicked: [],
+    score: 0,
+    topScore: 0
+  };
+
+  startGame = gargoyleId => {
+    console.log(gargoyleId);
+    const unclicked = this.state.gargoyles.filter(
+      clicked => clicked.id !== gargoyleId
+    );
+    console.log(unclicked);
+    this.setState({
+      notClicked: unclicked,
+      score: this.state.score + 1,
+      topScore: this.state.topScore + 1
+    });
   };
 
   render() {
@@ -38,10 +52,11 @@ class App extends Component {
                 {shuffledGargoyles.map(gargoyle => (
                   <GargoyleCard
                     key={gargoyle.id}
-                    gargoyles={gargoyle}
+                    id={gargoyle.id}
                     image={gargoyle.image}
                     name={gargoyle.name}
                     role={gargoyle.role}
+                    onImgClick={() => this.startGame(gargoyle.id)}
                   />
                 ))}
               </CardContainer>

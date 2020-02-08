@@ -3,84 +3,72 @@
     "id": 1,
     "name": "Goliath",
     "image": "https://vignette.wikia.nocookie.net/disney/images/4/4e/Goliath.jpg/revision/latest/scale-to-width-down/515?cb=20110317164939",
-    "role": "Leader of the Manhattan Clan",
-    "value": 1
+    "role": "Leader of the Manhattan Clan"
   },
   {
     "id": 2,
     "name": "Hudson",
     "image": "https://vignette.wikia.nocookie.net/disney/images/d/df/Hudson.jpg/revision/latest/scale-to-width-down/516?cb=20110317172815",
-    "role": "Goliath's Mentor",
-    "value": 1
+    "role": "Goliath's Mentor"
   },
   {
     "id": 3,
     "name": "Brooklyn",
     "image": "https://vignette.wikia.nocookie.net/disney/images/4/46/Brooklyn.jpg/revision/latest/scale-to-width-down/515?cb=20190916044745",
-    "role": "Goliath's Second-in-Command",
-    "value": 1
+    "role": "Goliath's Second-in-Command"
   },
   {
     "id": 4,
     "name": "Lexington",
     "image": "https://vignette.wikia.nocookie.net/disney/images/a/af/Lexington.jpg/revision/latest/scale-to-width-down/516?cb=20110317171605",
-    "role": "Member of the Manhattan Clan",
-    "value": 1
+    "role": "Member of the Manhattan Clan"
   },
   {
     "id": 5,
     "name": "Broadway",
     "image": "https://vignette.wikia.nocookie.net/disney/images/3/33/Broadway.jpg/revision/latest/scale-to-width-down/516?cb=20110317173215",
-    "role": "Member of the Manhattan Clan",
-    "value": 1
+    "role": "Member of the Manhattan Clan"
   },
   {
     "id": 6,
     "name": "Bronx",
     "image": "https://vignette.wikia.nocookie.net/disney/images/4/44/Bronx.jpg/revision/latest/scale-to-width-down/516?cb=20110317174726",
-    "role": "Member of the Manhattan Clan",
-    "value": 1
+    "role": "Member of the Manhattan Clan"
   },
   {
     "id": 7,
     "name": "Angela",
     "image": "https://vignette.wikia.nocookie.net/disney/images/e/e8/Angela.jpg/revision/latest/scale-to-width-down/516?cb=20160828130937",
-    "role": "Daughter of Goliath",
-    "value": 1
+    "role": "Daughter of Goliath"
   },
   {
     "id": 8,
     "name": "Demona",
     "image": "https://vignette.wikia.nocookie.net/disney/images/5/50/Demona.png/revision/latest/scale-to-width-down/516?cb=20130713161346",
-    "role": "Enemy of the Manhattan Clan",
-    "value": 1
+    "role": "Enemy of the Manhattan Clan"
   },
   {
     "id": 9,
     "name": "Elisa Maza",
     "image": "https://vignette.wikia.nocookie.net/disney/images/8/8d/Elisa_Maza.jpg/revision/latest/scale-to-width-down/516?cb=20110317175312",
-    "role": "NYPD Detective",
-    "value": 1
+    "role": "NYPD Detective"
   },
   {
     "id": 10,
     "name": "David Xanatos",
     "image": "https://vignette.wikia.nocookie.net/disney/images/7/7d/Xanatos_schemes-sized.jpg/revision/latest/scale-to-width-down/516?cb=20110317164115",
-    "role": "Enemy of the Manhattan Clan",
-    "value": 1
+    "role": "Enemy of the Manhattan Clan"
   },
   {
     "id": 11,
     "name": "Fox Xanatos",
     "image": "https://vignette.wikia.nocookie.net/disney/images/a/a0/Fox.jpg/revision/latest/scale-to-width-down/516?cb=20120615143058",
-    "role": "Enemy of the Manhattan Clan",
-    "value": 1
+    "role": "Enemy of the Manhattan Clan"
   },
   {
     "id": 12,
     "name": "Talon",
     "image": "https://vignette.wikia.nocookie.net/disney/images/3/3d/Talon.jpg/revision/latest/scale-to-width-down/516?cb=20130717162302",
-    "role": "Elisa's Younger Brother",
-    "value": 1
+    "role": "Elisa's Younger Brother"
   }
 ]

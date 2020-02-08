@@ -4,15 +4,13 @@ import "./style.css";
 // Stateless Functional Component
 const GargoyleCard = props => {
   return (
-    <div className="flip-card">
-      <div className="flip-card-inner">
+    <div className="flip-card" onClick={() => props.onImgClick(props.id)}>
+      <div className="flip-card-inner" type="button">
         <div className="flip-card-front">
           <img
-            type="image"
-            alt={props.name}
+            alt={props.name + " Image"}
             src={props.image}
             className="cardImg"
-            // onClick={() => this.props.onScore}
           />
         </div>
         <div className="flip-card-back">

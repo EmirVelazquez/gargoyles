@@ -9,7 +9,7 @@ const Nav = props => {
       <a className="navbar-brand" href="/">
         <img
           src={gargoyleLogo}
-          class="gargoyleLogo"
+          className="gargoyleLogo"
           alt="Gargoyles Show Logo"
         ></img>
       </a>
