@@ -4,4 +4,20 @@
   text-align: center;
   box-shadow: 0 -10px 20px -1px #070309;
   font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px #000000; /* Makes a text shadow */
+}
+
+#bigBro {
+  margin-top: 10px;
+}
+
+#logoContainer {
+  position: relative;
+  float: right;
+  bottom: 40px;
+}
+
+#linkedInLogo {
+  margin-left: 10px;
+  margin-right: 10px;
 }

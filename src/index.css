@@ -1,9 +1,43 @@
+/* Keep footer at bottom Start */
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
 #mainContainer {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+/* Keep footer at the bottom end */
+
+#backGroundContainer {
   background-image: url("./Bricks.png");
+  min-height: 100vh;
 }
 
 /* hsla color values are an extension of hsl color values with an alpha channel that specifies the opacity for a color. */
 #mainContent {
+  min-height: 100vh;
   background-color: hsla(281.82, 54.1%, 11.96%, 0.7);
   z-index: 1;
 }

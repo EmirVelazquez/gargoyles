@@ -7,14 +7,16 @@ function Footer() {
   return (
     <footer id="footer">
       <div id="footText">
-        <p>
-          &copy; 2020 Emir Velazquez{" "}
+        <p id="bigBro">In Memory of Ivan</p>
+        <p>&copy; 2020 Emir Velazquez</p>
+        <div id="logoContainer">
           <a
+            id="gitHubSmall"
             href="https://github.com/EmirVelazquez"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img id="gitHubSmall" alt="GitHub Logo" src={Github} />
+            <img alt="GitHub Logo" src={Github} />
           </a>
           <a
             id="linkedInLogo"
@@ -22,14 +24,9 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="linkedInLogoPic"
-              alt="Linked In Logo"
-              src={LinkedIn}
-            />
+            <img alt="Linked In Logo" src={LinkedIn} />
           </a>
-        </p>
-        <p>In Memory of Ivan</p>
+        </div>
       </div>
     </footer>
   );

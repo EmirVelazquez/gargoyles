@@ -6,6 +6,7 @@ import gargoyleLogo from "./gargoylesSmall.png";
 const Nav = props => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light" id="navBar">
+      {/* Left */}
       <a className="navbar-brand" href="/">
         <img
           src={gargoyleLogo}
@@ -13,13 +14,15 @@ const Nav = props => {
           alt="Gargoyles Show Logo"
         ></img>
       </a>
-      <div className="nav navbar-nav ml-auto">
+      {/* Centered */}
+      <div className="nav navbar-nav navCentered">
         <p className="clickStart">Begin by clicking an image!</p>
       </div>
-      <ul className="nav navbar-nav ml-auto">
-        <li className="scoreBoard">Current Score: {props.totalScore}</li>
-        <li className="scoreBoard">Top Score: {props.highScore}</li>
-      </ul>
+      {/* Right */}
+      <div className="nav navbar-nav ml-auto">
+        <p className="currentScore">Current Score: {props.currentScore}</p>
+        <p className="topScore">Top Score: {props.highestScore}</p>
+      </div>
     </nav>
   );
 };

@@ -6,7 +6,7 @@ import CardContainer from "./components/CardContainer";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 
-// Durstenfeld shuffle function to get a random order of gargoyles displayed
+// Durstenfeld shuffle helper function to get a random order of gargoyles displayed
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
@@ -19,32 +19,54 @@ function shuffleArray(array) {
 
 class App extends Component {
   state = {
-    gargoyles,
-    notClicked: [],
-    score: 0,
-    topScore: 0
+    gargoyles, // getting the json data of the gargoyles.json data array
+    wasClicked: [], // Flag state, it holds the cards that have already been clicked
+    score: 0, // Flag state to keep track of the current score
+    topScore: 1, // Flag state being used to update the all time highest score
+    allTimeHighScore: 0 // Flag state being used to display the all time highest score
   };
 
+  // This method handles the state changes
   startGame = gargoyleId => {
-    console.log(gargoyleId);
-    const unclicked = this.state.gargoyles.filter(
-      clicked => clicked.id !== gargoyleId
-    );
-    console.log(unclicked);
-    this.setState({
-      notClicked: unclicked,
-      score: this.state.score + 1,
-      topScore: this.state.topScore + 1
-    });
+    // If statement to search the wasClicked array to see if the gargoyle.id is in the array already
+    if (this.state.wasClicked.includes(gargoyleId)) {
+      // If true, set the states back to the default beginning states (except for the allTimeHighScore)
+      this.setState({
+        wasClicked: [],
+        score: 0,
+        topScore: 1
+      });
+    } else {
+      // If false, push the gargoyle.id into the wasClicked array
+      this.state.wasClicked.push(gargoyleId);
+      // Set the state for display purposes
+      this.setState({
+        score: this.state.score + 1,
+        topScore: this.state.topScore + 1
+      });
+      // If statement to update the Top Score accordingly and only do it when the top score has been surpassed
+      if (
+        this.state.topScore >= 0 &&
+        this.state.topScore > this.state.allTimeHighScore
+      ) {
+        this.setState({
+          allTimeHighScore: this.state.topScore
+        });
+      }
+    }
   };
 
   render() {
+    // This is going to shuffle the gargoyles.json into a random orde everysingle time
     const shuffledGargoyles = shuffleArray(this.state.gargoyles);
     return (
-      <React.Fragment>
-        <Nav totalScore={this.state.score} highScore={this.state.topScore} />
+      <div id="mainContainer">
+        <Nav
+          currentScore={this.state.score}
+          highestScore={this.state.allTimeHighScore}
+        />
         <Banner />
-        <div className="container-fluid" id="mainContainer">
+        <div className="container-fluid" id="backGroundContainer">
           <div className="row" id="mainContent">
             <div className="col-md-3"></div>
             <div className="col-md-6">
@@ -56,6 +78,7 @@ class App extends Component {
                     image={gargoyle.image}
                     name={gargoyle.name}
                     role={gargoyle.role}
+                    // This will start the game when an image is clicked
                     onImgClick={() => this.startGame(gargoyle.id)}
                   />
                 ))}
@@ -65,7 +88,7 @@ class App extends Component {
           </div>
         </div>
         <Footer />
-      </React.Fragment>
+      </div>
     );
   }
 }

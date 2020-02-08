@@ -9,17 +9,23 @@
 
 .clickStart {
   font-size: 30px;
-  position: relative;
-  right: 80px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
 }
 
 .clickStart,
-.scoreBoard {
+.topScore,
+.currentScore {
   font-family: "New Rocker", cursive;
   text-align: center;
+  text-shadow: 2px 2px #000000; /* Makes a text shadow */
+}
+
+.topScore,
+.currentScore {
+  margin-right: 10px;
+  font-size: 25px;
 }
 
 #navBar {
@@ -27,8 +33,44 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  /* This will make the navBar `sticky` so when user scrolls it follows the scrolling */
   background-color: #702a8c;
   color: #ffffff;
   height: 100px;
   box-shadow: 0 10px 20px -1px #070309;
+}
+
+/* This is centering the chosen element in the navbar */
+.navCentered p {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Queries for Mobile */
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  .gargoyleLogo {
+    position: relative;
+    right: 45px;
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .clickStart {
+    font-size: 14px;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+
+  .topScore,
+  .currentScore {
+    font-size: 14px;
+    width: 100%;
+    max-width: 100px;
+  }
 }
