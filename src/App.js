@@ -57,13 +57,13 @@ class App extends Component {
   };
 
   render() {
-    // This is going to shuffle the gargoyles.json into a random orde everysingle time
+    // This is going to shuffle the gargoyles.json into a random order everysingle time
     const shuffledGargoyles = shuffleArray(this.state.gargoyles);
     return (
       <div id="mainContainer">
         <Nav
-          currentScore={this.state.score}
-          highestScore={this.state.allTimeHighScore}
+          currentScore={this.state.score} // Passing props for the current score display
+          highestScore={this.state.allTimeHighScore} // Passing props for the top score display
         />
         <Banner />
         <div className="container-fluid" id="backGroundContainer">
@@ -71,6 +71,7 @@ class App extends Component {
             <div className="col-md-3"></div>
             <div className="col-md-6">
               <CardContainer>
+                {/* Mapping through the shuffled 'deck' and passing props to the gargoyle cards */}
                 {shuffledGargoyles.map(gargoyle => (
                   <GargoyleCard
                     key={gargoyle.id}

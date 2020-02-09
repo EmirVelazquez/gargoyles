@@ -1,14 +1,14 @@
 .characterName {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "New Rocker", cursive;
   margin-top: 30px;
 }
 
 .figure-caption {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .cardImg {
@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1800px) {
+@media screen and (min-width: 768px) and (max-width: 1399px) {
   .cardImg,
   .flip-card-inner,
   .flip-card-front,
@@ -91,5 +91,21 @@
     width: 140px;
     height: 120px;
     max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+  .cardImg,
+  .flip-card-inner,
+  .flip-card-front,
+  .flip-card-back {
+    width: 170px;
+    height: 150px;
+  }
+
+  .flip-card {
+    width: 170px;
+    height: 150px;
+    max-width: 170px;
   }
 }
