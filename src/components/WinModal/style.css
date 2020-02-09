@@ -1,0 +1,49 @@
+.winHeader {
+  background-color: #702a8c;
+  border: none;
+  color: #ffffff;
+  font-family: "New Rocker", cursive;
+  text-shadow: 2px 2px #000000; /* Makes a text shadow */
+  box-shadow: 0 10px 20px -1px #000000;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+.winBody,
+.winFooter {
+  background-color: #2d1138;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px #000000; /* Makes a text shadow */
+  text-align: center;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  margin: 0 auto 0 auto;
+}
+
+.goliathSticker {
+  height: 180px;
+  width: auto;
+}
+
+.winMessage {
+  margin: 50px 0 0 30px;
+}
+
+.winButton {
+  color: #ffdf46;
+  background-color: #000000;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.winButton:hover {
+  color: #000000;
+  background-color: #ffdf46;
+  border-color: #ffffff;
+}

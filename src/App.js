@@ -5,6 +5,7 @@ import gargoyles from "./gargoyles.json";
 import CardContainer from "./components/CardContainer";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
+import WinModal from "./components/WinModal";
 
 // Durstenfeld shuffle helper function to get a random order of gargoyles displayed
 function shuffleArray(array) {
@@ -23,13 +24,27 @@ class App extends Component {
     wasClicked: [], // Flag state, it holds the cards that have already been clicked
     score: 0, // Flag state to keep track of the current score
     topScore: 1, // Flag state being used to update the all time highest score
-    allTimeHighScore: 0 // Flag state being used to display the all time highest score
+    allTimeHighScore: 0, // Flag state being used to display the all time highest score
+    showModal: false // Flag state for displaying victory modal
+  };
+
+  showModalClose = () => {
+    this.setState({ showModal: false });
   };
 
   // This method handles the state changes
   startGame = gargoyleId => {
-    // If statement to search the wasClicked array to see if the gargoyle.id is in the array already
-    if (this.state.wasClicked.includes(gargoyleId)) {
+    // If user gets to score 12 then Modal to alert user they won, reset all states back to default
+    if (this.state.allTimeHighScore === 12) {
+      this.setState({
+        showModal: true,
+        wasClicked: [],
+        score: 0,
+        topScore: 1,
+        allTimeHighScore: 0
+      });
+      // else if statement to search the wasClicked array to see if the gargoyle.id is in the array already
+    } else if (this.state.wasClicked.includes(gargoyleId)) {
       // If true, set the states back to the default beginning states (except for the allTimeHighScore)
       this.setState({
         wasClicked: [],
@@ -86,6 +101,10 @@ class App extends Component {
               </CardContainer>
             </div>
             <div className="col-md-3"></div>
+            <WinModal
+              show={this.state.showModal}
+              onClick={this.showModalClose}
+            />
           </div>
         </div>
         <Footer />
