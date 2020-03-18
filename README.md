@@ -2,10 +2,14 @@
 
 This is a card shuffle game based on the 90's cartoon Gargoyles. The game starts by clicking on any card, then the cards are reshuffled and the user must not click on the same card twice. I decided to make this in memory of my brother Ivan, he used to love this cartoon and also made me really love it too. The game is built using react.
 
-## Technologies Detailed
+## Technologies Utilized
 
-- JavaScript
 - React
+- Javascript
+- HTML
+- CSS
+- Bootstrap
+- Node.js
 
 ## User Instructions Detailed
 
